@@ -54,7 +54,7 @@ struct ArrAnalysisStruct arr_analysis(int arr[], int len) {
 
 
 int get_input() {
-    struct NormalizedInputIntStruct out_input;
+    struct InputIntStruct out_input;
     struct ArrAnalysisStruct result;
 
     out_input = input_int("Введіть довжину списку: ");

@@ -9,5 +9,8 @@ add_executable(c_learning
         main.c
         first_calc/first_calc.h
         mini_statistics_engine/mini_statistics_engine.h
-        own_tools/normalized_input_int.c
-        own_tools/own_tools.h)
+        own_tools/input_int.c
+        own_tools/own_tools.h
+        mini_inventory/mini_inventory.c
+        mini_inventory/mini_inventory.h
+        own_tools/input_str.c)

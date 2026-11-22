@@ -8,6 +8,7 @@
 
 #include "./first_calc/first_calc.h"
 #include "./mini_statistics_engine/mini_statistics_engine.h"
+#include "./mini_inventory/mini_inventory.h"
 
 void setup_console() {
     SetConsoleOutputCP(CP_UTF8);
@@ -28,9 +29,10 @@ int main() {
     int choice;
     int status = 0;
 
-    printf("=== MY PROGRAM ===\n");
+    printf("=== MY PROGRAMS ===\n");
     printf("1. Калькулятор\n");
     printf("2. Міністатистика\n");
+    printf("3. міні інвентар\n");
     printf("Ваш вибір: ");
 
     if (scanf("%d", &choice) != 1) {
@@ -43,6 +45,10 @@ int main() {
 
             case 2:
                 status = mini_statistics_engine();
+                break;
+
+            case 3:
+                status = mini_inventory();
                 break;
 
             default:

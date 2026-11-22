@@ -7,8 +7,8 @@
 #include "./own_tools.h"
 
 
-struct NormalizedInputIntStruct input_int(const char *text) {
-    struct NormalizedInputIntStruct results;
+struct InputIntStruct input_int(const char *text) {
+    struct InputIntStruct results;
     int x;
 
     printf("%s", text);
