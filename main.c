@@ -9,6 +9,7 @@
 #include "./first_calc/first_calc.h"
 #include "./mini_statistics_engine/mini_statistics_engine.h"
 #include "./mini_inventory/mini_inventory.h"
+#include "./text_analyzer/text_analyzer.h"
 
 void setup_console() {
     SetConsoleOutputCP(CP_UTF8);
@@ -33,11 +34,15 @@ int main() {
     printf("1. Калькулятор\n");
     printf("2. Міністатистика\n");
     printf("3. міні інвентар\n");
+    printf("4. аналізатор тексту\n");
     printf("Ваш вибір: ");
 
     if (scanf("%d", &choice) != 1) {
         printf("\nНекоректне введення!\n");
     } else {
+        int c;
+        while ((c = getchar()) != '\n' && c != EOF);
+
         switch (choice) {
             case 1:
                 status = first_calc();
@@ -49,6 +54,10 @@ int main() {
 
             case 3:
                 status = mini_inventory();
+                break;
+
+            case 4:
+                status = text_analyzer();
                 break;
 
             default:

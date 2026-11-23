@@ -23,6 +23,8 @@ struct InputStrStruct input_str(const char *text) {
         return results;
     }
 
+    printf("DEBUG BUFFER: [%s]\n", buffer);
+
     buffer[strcspn(buffer, "\n")] = '\0';
 
     results.out = malloc(strlen(buffer) + 1);

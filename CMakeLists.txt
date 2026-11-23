@@ -13,4 +13,6 @@ add_executable(c_learning
         own_tools/own_tools.h
         mini_inventory/mini_inventory.c
         mini_inventory/mini_inventory.h
-        own_tools/input_str.c)
+        own_tools/input_str.c
+        text_analyzer/text_analyzer.c
+        text_analyzer/text_analyzer.h)
