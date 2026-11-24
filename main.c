@@ -10,6 +10,7 @@
 #include "./mini_statistics_engine/mini_statistics_engine.h"
 #include "./mini_inventory/mini_inventory.h"
 #include "./text_analyzer/text_analyzer.h"
+#include "./array_modifier/array_modifier.h"
 
 void setup_console() {
     SetConsoleOutputCP(CP_UTF8);
@@ -35,6 +36,7 @@ int main() {
     printf("2. Міністатистика\n");
     printf("3. міні інвентар\n");
     printf("4. аналізатор тексту\n");
+    printf("5. змінювач списків\n");
     printf("Ваш вибір: ");
 
     if (scanf("%d", &choice) != 1) {
@@ -59,6 +61,11 @@ int main() {
             case 4:
                 status = text_analyzer();
                 break;
+
+            case 5:
+                status = array_modifier();
+                break;
+
 
             default:
                 printf("Невідомий пункт меню!\n");
