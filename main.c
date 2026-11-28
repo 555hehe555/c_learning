@@ -11,6 +11,7 @@
 #include "./mini_inventory/mini_inventory.h"
 #include "./text_analyzer/text_analyzer.h"
 #include "./array_modifier/array_modifier.h"
+#include "./dynamic_array_manager/dynamic_array_manager.h"
 
 void setup_console() {
     SetConsoleOutputCP(CP_UTF8);
@@ -37,6 +38,7 @@ int main() {
     printf("3. міні інвентар\n");
     printf("4. аналізатор тексту\n");
     printf("5. змінювач списків\n");
+    printf("6. менеджер динамічних списків\n");
     printf("Ваш вибір: ");
 
     if (scanf("%d", &choice) != 1) {
@@ -66,6 +68,9 @@ int main() {
                 status = array_modifier();
                 break;
 
+            case 6:
+                status = dynamic_array_manager();
+                break;
 
             default:
                 printf("Невідомий пункт меню!\n");

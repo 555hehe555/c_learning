@@ -17,4 +17,6 @@ add_executable(c_learning
         text_analyzer/text_analyzer.c
         text_analyzer/text_analyzer.h
         array_modifier/array_modifier.c
-        array_modifier/array_modifier.h)
+        array_modifier/array_modifier.h
+        dynamic_array_manager/dynamic_array_manager.c
+        dynamic_array_manager/dynamic_array_manager.h)

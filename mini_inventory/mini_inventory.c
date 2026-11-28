@@ -74,7 +74,7 @@ int inventory_add(struct InventoryStruct *inventory) {
     return 0;
 }
 
-int inventory_show(struct  InventoryStruct *inventory) {
+int inventory_show(struct InventoryStruct *inventory) {
     for (int i=0; i<inventory->size; i++) {
         printf("id предмета: %d\n", inventory->items[i].id);
         printf("імя предмета: %s\n", inventory->items[i].name);
